@@ -1,0 +1,18 @@
+h1{
+  margin: 0.75rem 2rem !important;
+  display: flex;
+  gap: 1rem;
+  mat-icon {
+    font-size: 30px;
+  }
+}
+
+.user, .user>a {
+  margin-right: 1rem;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+}

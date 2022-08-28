@@ -1,0 +1,22 @@
+form.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+mat-form-field{
+    width: 500px;
+}
+
+button{
+    padding: 0;
+    margin-top: -15px;
+    color: darkcyan;
+}
+
+.mat-icon {
+  height: 48px !important;
+  width: 48px !important;
+  font-size: 48px !important;
+  margin-left: -1rem;
+}

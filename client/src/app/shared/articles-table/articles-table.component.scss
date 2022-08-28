@@ -1,0 +1,26 @@
+:host{
+  width: 85vw;
+  margin-top: 1.5rem;
+}
+.full-width-table {
+  width: 100%;
+}
+
+::ng-deep table.full-width-table {
+  tbody,
+  thead{
+    tr{
+      th,td{
+        padding-right: 1.5rem;
+      }
+      th{
+        font-size: medium;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+mat-progress-bar{
+  margin-top: 3rem;
+}

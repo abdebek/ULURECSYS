@@ -1,0 +1,41 @@
+.app-root{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    app-header,
+    app-footer,
+    app-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    app-header,
+    app-footer {
+        height: 50px;
+        width: 100%;
+        background-color: aliceblue;
+        flex: 1 1 50px;
+    }
+
+    app-header{
+        justify-content: space-between;
+        position:fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    app-content{
+        // min-height: 70vh;
+        width: 100%;
+        flex: 1 1 80vh;
+        margin: 1.5rem 0;
+    }
+
+    app-footer{
+        position:fixed;
+        bottom: 0;
+    }
+}

@@ -1,0 +1,34 @@
+<mat-progress-bar mode="query" *ngIf="isLoading"></mat-progress-bar>
+<div class="mat-elevation-z1" [hidden]="isLoading">
+  <table mat-table class="full-width-table" matSort aria-label="Elements">
+
+        <!-- Name Column -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Başlık</th>
+      <td mat-cell *matCellDef="let row">{{row.title}}</td>
+    </ng-container>
+
+        <!-- Year Column -->
+    <ng-container matColumnDef="year">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Yıl</th>
+      <td mat-cell *matCellDef="let row">{{row.year}}</td>
+    </ng-container>
+
+        <!-- Score Column -->
+    <ng-container matColumnDef="score">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Yakınlık Puanı</th>
+      <td mat-cell *matCellDef="let row">{{row.score}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator #paginator
+      [length]="dataSource?.data?.length"
+      [pageIndex]="0"
+      [pageSize]="5"
+      [pageSizeOptions]="[5, 10, 20]"
+      aria-label="Select page">
+  </mat-paginator>
+</div>

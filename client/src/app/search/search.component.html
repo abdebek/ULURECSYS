@@ -1,0 +1,8 @@
+<form [formGroup]="searchForm" (submit)="search()" action="#" class="search-form">
+  <mat-form-field hintLabel="En fazla 300 harf" appearance="fill">
+    <mat-label> makale arayın </mat-label>
+    <input formControlName="searchTxt" matInput #input maxlength="300" placeholder="Ex. Nougat">
+    <mat-hint align="end">{{input.value?.length || 0}}/300</mat-hint>
+  </mat-form-field>
+  <button type="button" mat-flat-button (click)="search()"><mat-icon>search</mat-icon></button>
+</form>

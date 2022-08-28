@@ -1,0 +1,38 @@
+:host{
+    width: 100%;
+}
+
+.search,
+app-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.search {
+  ulurecsys-logo,
+  app-search {
+    width: 100vw;
+    flex: 1 1 100;
+    flex-basis: 100%;
+    max-height: 50px;
+  }
+
+  articles-table{
+    margin-top: 1rem;
+    height: auto;
+  }
+}
+
+.ulurecsys-logo{
+  justify-content: center;
+  align-items: center;
+  .logo{
+    max-width: 125px;
+    max-height: 90px;
+    img{
+      width: 100%;
+    }
+  }
+}
