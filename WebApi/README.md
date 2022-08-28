@@ -19,5 +19,5 @@ run app:
 
 if you are already in the WebApi dir, you can start the client using:
 `
-cd .. && cd client && ng s
+cd .. && cd Client && ng s
 `

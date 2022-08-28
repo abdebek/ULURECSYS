@@ -45,9 +45,9 @@ run app:
 swaager doc will be running on: http://127.0.0.1:8000/docs
 
 ## Angular Frontend
-
+if you in the project's root folder
 `
-cd client
+cd Client
 ng s
 `
 

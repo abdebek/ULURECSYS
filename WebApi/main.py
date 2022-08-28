@@ -178,22 +178,12 @@ def search(background_tasks: BackgroundTasks, query: str = search_text, offset=0
     return recs
 
 
-# @app.post("/api/search")  # type: ignore
-# def search(background_tasks: BackgroundTasks, query: str = search_text, offset=0, pageSize=100) -> Recommendations:
-#     mdl= model # Model()
-#     embd=  embedding #Embedding()
-#     queries = [query]
-#     recs = Rec(queries, mdl, embd, int(offset), int(pageSize), background_tasks)
-#     return recs
-
-
-
 # the python-multipart package is required to use the OAuth2PasswordRequestForm
 @app.post('/api/auth/token')
 def login(data: OAuth2PasswordRequestForm = Depends()):
     email = data.username
     password = data.password
-    user = load_user(email) # type: ignore  type: ignore # we are using the same function to retrieve the user
+    user = load_user(email) # type: ignore  # we are using the same function to retrieve the user
     if not user:
         raise InvalidCredentialsException  # you can also use your own HTTPException
     elif password != user['password']:

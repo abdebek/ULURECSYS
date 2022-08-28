@@ -1,5 +1,8 @@
 # UluRecSys 
 
+
+# "Deep Attention and Online Learning for Hybrid Artıcle Recommendation System
+(Hibrit Makale Öneri Sistemine Yönelik Derin Dikkat ve Çevrimiçi Öğrenme).
 ## Web API
 
 activated conda env:
@@ -11,13 +14,13 @@ env_name = py9transformers
 `source activate /home/ileri/anaconda3/envs/py9transformers`
 
 run app: 
-`uvicorn main:app --reload`
+`cd WebAPi && uvicorn main:app --reload`
 
 swaager doc will be running on: http://127.0.0.1:8000/docs
 
 ## Angular Frontend
 
 `
-cd client
+cd Client
 ng s
 `
