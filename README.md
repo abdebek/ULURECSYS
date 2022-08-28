@@ -1,7 +1,7 @@
 # UluRecSys 
 
 
-# "Deep Attention and Online Learning for Hybrid Artıcle Recommendation System
+# Deep Attention and Online Learning for A Hybrid Article Recommendation System
 (Hibrit Makale Öneri Sistemine Yönelik Derin Dikkat ve Çevrimiçi Öğrenme).
 ## Web API
 
