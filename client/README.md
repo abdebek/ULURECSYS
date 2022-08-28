@@ -27,9 +27,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-#UluRecSys 
+# UluRecSys 
 
-##Web API
+## Web API
 
 activated conda env:
 `source activate {user_home_dir}/anaconda3/envs/{env_name}`
