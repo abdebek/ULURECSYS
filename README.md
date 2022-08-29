@@ -18,6 +18,8 @@ swaager doc will be running on: http://127.0.0.1:8000/docs
 ## Angular Frontend
 
 `
-cd Client
-ng s
+cd Client && ng s
 `
+
+### Sample Page:
+[![Sample page screenshot](src/../Client/src/assets/ulurecsys_screenshot.jpg)]
