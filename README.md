@@ -22,4 +22,4 @@ cd Client && ng s
 `
 
 ### Sample Page:
-[![Sample page screenshot](./Client/src/assets/ulurecsys_screenshot.jpg)]
+[![Sample page screenshot](./client/src/assets/ulurecsys_screenshot.jpg)]
